@@ -14,7 +14,13 @@ package pro.sky.java.course1.objectsAndClasses1;
 //В том же методе main измените год публикации одной из книг с помощью сеттера.
 public class Book {
     private String bookName;
-    Author authorName;
+    Author author;
     private int issueDate;
+
+    public Book(String bookName, Author author, int issueDate) {
+        this.bookName = bookName;
+        this.author = author;
+        this.issueDate = issueDate;
+    }
 
 }
