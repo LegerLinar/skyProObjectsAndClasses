@@ -18,10 +18,10 @@ public class Book {
     private int issueDate;
 
     //    Constructor
-    public Book(String bookName, Author author, int issueDate) {
+    public Book(String bookName, Author author, int issueYear) {
         this.bookName = bookName;
         this.author = author;
-        this.issueDate = issueDate;
+        this.issueDate = issueYear;
     }
 
 // getters
