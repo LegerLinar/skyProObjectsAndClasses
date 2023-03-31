@@ -17,10 +17,34 @@ public class Book {
     Author author;
     private int issueDate;
 
+    //    Constructor
     public Book(String bookName, Author author, int issueDate) {
         this.bookName = bookName;
         this.author = author;
         this.issueDate = issueDate;
     }
 
+// getters
+
+    public String getBookName() {
+        return this.bookName;
+    }
+
+    public void setBookName(String bookName) {
+        this.bookName = bookName;
+    }
+
+    public Author getAuthor() {
+        return this.author;
+    }
+
+// setters
+
+    public int getIssueDate() {
+        return this.issueDate;
+    }
+
+    public void setIssueDate(int issueDate) {
+        this.issueDate = issueDate;
+    }
 }
