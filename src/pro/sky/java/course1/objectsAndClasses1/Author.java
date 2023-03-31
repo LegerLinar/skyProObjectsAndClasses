@@ -27,4 +27,12 @@ public class Author {
     public String getAuthorSurname() {
         return this.authorSurname;
     }
+
+    public void setAuthorName(String name) {
+        this.authorName = name;
+    }
+
+    public void setAuthorSurname(String surname) {
+        this.authorSurname = surname;
+    }
 }
