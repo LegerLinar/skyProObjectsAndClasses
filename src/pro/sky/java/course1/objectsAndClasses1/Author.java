@@ -39,6 +39,11 @@ public class Author {
         Author c2 = (Author) other;
         return authorName.equals(c2.authorName) && authorSurname.equals(c2.authorSurname);
     }
+
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hash(authorName, authorSurname);
+    }
 }
 
 //Реализуйте методы toString, equals и hashCode в классах Author и Book, которые вы создали на прошлом уроке.

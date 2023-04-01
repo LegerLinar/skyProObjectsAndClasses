@@ -21,6 +21,8 @@ public class Main {
         warPeace.setIssueDate(2023);
 
         System.out.println(ostrovskiy.equals(tolstoy));
-
+        System.out.println(ostrovskiy);
+        System.out.println(tolstoy);
+        System.out.println(ostrovskiy.hashCode());
     }
 }
