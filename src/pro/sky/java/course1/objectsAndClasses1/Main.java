@@ -22,17 +22,17 @@ public class Main {
         warPeace.setIssueYear(2023);
 
 
+        System.out.println(ostrovskiy.equals(tolstoy));
+        System.out.println(ostrovskiy);
+        System.out.println(tolstoy);
+        System.out.println(ostrovskiy.hashCode());
+
+        System.out.println(stormBorne);
+
+        System.out.println(asTheSteelWasTempered.equals(asTheSteelWasTemperedEqualityTest));
+
         System.out.println(stormBorne.getAuthor());
         System.out.println(annaKarenina.hashCode());
-
-//        System.out.println(ostrovskiy.equals(tolstoy));
-//        System.out.println(ostrovskiy);
-//        System.out.println(tolstoy);
-//        System.out.println(ostrovskiy.hashCode());
-//
-//        System.out.println(stormBorne);
-//
-//        System.out.println(asTheSteelWasTempered.equals(asTheSteelWasTemperedEqualityTest));
 
     }
 }
