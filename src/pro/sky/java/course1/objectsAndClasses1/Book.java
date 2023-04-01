@@ -35,7 +35,7 @@ public class Book {
     }
 
     public String getAuthor() {
-        return author.getAuthorName() + " " + author.getAuthorSurname();
+        return author.toString();
     }
 
 // setters

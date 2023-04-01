@@ -14,17 +14,24 @@ public class Main {
         Author tolstoy = new Author("Лев", "Толстой");
 
         Book asTheSteelWasTempered = new Book("Как закалялась сталь", ostrovskiy, 1934);
+        Book asTheSteelWasTemperedEqualityTest = new Book("Как закалялась сталь", ostrovskiy, 1934);
         Book stormBorne = new Book("Рождённые бурей", ostrovskiy, 1937);
         Book warPeace = new Book("Война и Мир", tolstoy, 1867);
         Book annaKarenina = new Book("Анна Каренина", tolstoy, 1877);
 
         warPeace.setIssueYear(2023);
 
-        System.out.println(ostrovskiy.equals(tolstoy));
-        System.out.println(ostrovskiy);
-        System.out.println(tolstoy);
-        System.out.println(ostrovskiy.hashCode());
 
-        System.out.println(stormBorne);
+        System.out.println(stormBorne.getAuthor());
+
+//        System.out.println(ostrovskiy.equals(tolstoy));
+//        System.out.println(ostrovskiy);
+//        System.out.println(tolstoy);
+//        System.out.println(ostrovskiy.hashCode());
+//
+//        System.out.println(stormBorne);
+//
+//        System.out.println(asTheSteelWasTempered.equals(asTheSteelWasTemperedEqualityTest));
+
     }
 }
