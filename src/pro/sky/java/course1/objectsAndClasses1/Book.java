@@ -47,6 +47,11 @@ public class Book {
     public void setIssueDate(int issueDate) {
         this.issueDate = issueDate;
     }
+
+    @Override
+    public String toString() {
+        return bookName + ". Автор - " + author.toString() + ". " + issueDate + "г.";
+    }
 }
 
 

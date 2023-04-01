@@ -24,5 +24,7 @@ public class Main {
         System.out.println(ostrovskiy);
         System.out.println(tolstoy);
         System.out.println(ostrovskiy.hashCode());
+
+        System.out.println(stormBorne);
     }
 }
