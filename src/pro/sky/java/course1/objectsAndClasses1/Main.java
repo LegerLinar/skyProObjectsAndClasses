@@ -10,6 +10,7 @@ public class Main {
         ////В том же методе main измените год публикации одной из книг с помощью сеттера.
 
         Author ostrovskiy = new Author("Николай", "Островский");
+//        Author ostrovskiy2 = new Author("Николай", "Островский");
         Author tolstoy = new Author("Лев", "Толстой");
 
         Book asTheSteelWasTempered = new Book("Как закалялась сталь", ostrovskiy, 1934);
@@ -19,7 +20,7 @@ public class Main {
 
         warPeace.setIssueDate(2023);
 
-        System.out.println(warPeace.getIssueDate());
+        System.out.println(ostrovskiy.equals(tolstoy));
 
     }
 }

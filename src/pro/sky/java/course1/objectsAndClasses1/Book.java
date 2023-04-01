@@ -48,3 +48,7 @@ public class Book {
         this.issueDate = issueDate;
     }
 }
+
+
+//Реализуйте методы toString, equals и hashCode в классах Author и Book, которые вы создали на прошлом уроке.
+//Обратите внимание, что toString книги не должен дублировать код из toString автора, а должен делегировать (вызывать) его версию метода.
