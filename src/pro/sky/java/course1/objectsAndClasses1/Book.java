@@ -15,19 +15,19 @@ package pro.sky.java.course1.objectsAndClasses1;
 public class Book {
     private String bookName;
     private Author author;
-    private int issueDate;
+    private int issueYear;
 
     //    Constructor
     public Book(String bookName, Author author, int issueYear) {
         this.bookName = bookName;
         this.author = author;
-        this.issueDate = issueYear;
+        this.issueYear = issueYear;
     }
 
 // getters
 
     public String getBookName() {
-        return this.bookName;
+        return bookName;
     }
 
     public void setBookName(String bookName) {
@@ -35,22 +35,32 @@ public class Book {
     }
 
     public String getAuthor() {
-        return this.author.getAuthorName() + " " + this.author.getAuthorSurname();
+        return author.getAuthorName() + " " + author.getAuthorSurname();
     }
 
 // setters
 
-    public int getIssueDate() {
-        return this.issueDate;
+    public int getIssueYear() {
+        return issueYear;
     }
 
-    public void setIssueDate(int issueDate) {
-        this.issueDate = issueDate;
+    public void setIssueYear(int issueYear) {
+        this.issueYear = issueYear;
     }
 
     @Override
     public String toString() {
-        return bookName + ". Автор - " + author.toString() + ". " + issueDate + "г.";
+        return bookName + ". Автор - " + author.toString() + ". " + issueYear + "г.";
+    }
+
+
+    @Override
+    public boolean equals(Object other) {
+        if (this.getClass() != other.getClass()) {
+            return false;
+        }
+        Book c2 = (Book) other;
+        return bookName.equals(c2.bookName) && author.equals(c2.author) && issueYear == c2.issueYear;
     }
 }
 

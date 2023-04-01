@@ -18,7 +18,7 @@ public class Main {
         Book warPeace = new Book("Война и Мир", tolstoy, 1867);
         Book annaKarenina = new Book("Анна Каренина", tolstoy, 1877);
 
-        warPeace.setIssueDate(2023);
+        warPeace.setIssueYear(2023);
 
         System.out.println(ostrovskiy.equals(tolstoy));
         System.out.println(ostrovskiy);
