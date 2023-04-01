@@ -62,6 +62,11 @@ public class Book {
         Book c2 = (Book) other;
         return bookName.equals(c2.bookName) && author.equals(c2.author) && issueYear == c2.issueYear;
     }
+
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hash(bookName);
+    }
 }
 
 

@@ -23,6 +23,7 @@ public class Main {
 
 
         System.out.println(stormBorne.getAuthor());
+        System.out.println(annaKarenina.hashCode());
 
 //        System.out.println(ostrovskiy.equals(tolstoy));
 //        System.out.println(ostrovskiy);
