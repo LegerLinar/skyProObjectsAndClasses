@@ -56,7 +56,7 @@ public class Book {
 
     @Override
     public boolean equals(Object other) {
-        if (other == null && this.getClass() != other.getClass()) {
+        if (other == null || this.getClass() != other.getClass()) {
             return false;
         }
         Book c2 = (Book) other;
